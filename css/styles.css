@@ -1,0 +1,129 @@
+/* General Styles */
+
+.flex-container {
+  display: flex;
+}
+
+header,
+footer,
+main section {
+  text-align: center;
+}
+
+main,
+footer {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* Main Content Styles */
+
+header {
+  background-color: slategray;
+}
+
+header, 
+input[type="submit"] {
+  color: white;
+}
+
+header h1 {
+  margin-top: 0;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+main section {
+  padding-bottom: .5em;
+  border-bottom: 5px solid black;
+}
+
+main section h2 {
+  margin-bottom: 10px;
+}
+
+main section p {
+  margin-top: 0;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+li label {
+  padding-left: 5px;
+}
+
+footer {
+  font-style: italic;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+/* Form Styles */
+
+input,
+select,
+textarea {
+  border-radius: 5px;
+  background-color: blanchedalmond;
+  padding: 10px;
+  border: none;
+  box-sizing: border-box;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid blue;
+}
+
+fieldset > input, 
+fieldset > select,
+textarea, 
+input[type="submit"] {
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  padding-left: 0;
+}
+
+fieldset > label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  font-size: small;
+}
+
+legend {
+  font-weight: bold;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: small;
+  text-align: right;
+}
+
+input[type="submit"] {
+  background-color: teal;
+  font-size: 1.5em;
+  margin-top: 1em;
+}
+
+input[type="number"] {
+  width: 50%;
+  margin-bottom: 1em;
+}
