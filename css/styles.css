@@ -89,7 +89,7 @@ textarea:focus {
 }
 
 fieldset > input, 
-fieldset > select,
+select,
 textarea, 
 input[type="submit"] {
   width: 100%;
@@ -127,3 +127,50 @@ input[type="number"] {
   width: 50%;
   margin-bottom: 1em;
 }
+
+/* Media Query */
+
+@media (min-width: 768px) {
+  main,
+  footer {
+   width: 50%;
+   margin: auto;
+  }
+
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  footer {
+    margin-top: 1em;
+    margin-bottom: 3em;
+  }
+  
+  .flex-container {
+    display: block;
+  }
+  
+  fieldset > label {
+    width: 30%;
+    font-weight: initial;
+    font-size: initial;
+  }
+
+  fieldset > input, 
+  select {
+    width: 70%;
+  }
+
+  fieldset > label,
+  fieldset > input, 
+  select {
+    float: left;
+    margin-top: .5em;
+    margin-bottom: .5em;
+  }
+
+  input[type="number"] {
+    width: 35%;
+  }
+} 
